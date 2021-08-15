@@ -276,5 +276,7 @@ func collectorOptions() []collector.Option {
 		opts = append(opts, collector.WithTLS(*insecure))
 	}
 
+	opts = append(opts, collector.WithFirewall())
+
 	return opts
 }
